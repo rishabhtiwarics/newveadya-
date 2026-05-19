@@ -10,15 +10,16 @@ const Hero = () => {
   const slidesData = [
     {
       id: 1,
-      img: "/images/1.jfif"
+      img: "/bannerone.png"
     },
     {
       id: 2,
-      img: "/images/5.jfif"
+      img: "/bnnerthree.png"
+
     },
     {
       id: 3,
-      img: "/images/homebanner3.jfif"
+      img: "/bannertwo.png"
     }
   ];
 
@@ -60,9 +61,8 @@ const Hero = () => {
                   {/* Full Bleed Image Background */}
                   <div className="hero-slide-bg">
                     <img src={slide.img} alt="Veadya Slideshow" className="hero-bg-img" />
-                    <div className="hero-slide-overlay" />
                   </div>
-                  
+
                   {/* Centered Floating Glass Trust Bar (Figma Style) */}
                   <div className="hero-glass-container">
                     <div className="hero-glass justify-center">
