@@ -67,16 +67,20 @@ const WatchShop = () => {
   const displayReels = [...reelsData, ...reelsData, ...reelsData];
 
   return (
-    <section className="py-16 bg-[#f8faf9] relative overflow-hidden">
+    <section className="py-16 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #ffffff 0%, var(--bg-mist) 45%, var(--bg) 60%, var(--bg-mist) 80%, #ffffff 100%)' }}>
       <div className="section-container relative z-10">
         
         {/* Section Heading */}
-        <div className="text-center mb-10">
-          <h2 className="font-serif text-[32px] md:text-[38px] text-[#114232] mb-2 font-normal">
-            Watch & Shop
+        <div className="section-header text-center mb-12">
+          <p className="section-eyebrow flex items-center justify-center gap-2">
+            <i className="fa-solid fa-play section-eyebrow-icon" />
+            Watch &amp; Shop <span className="eyebrow-dot">·</span> Interactive Reels
+          </p>
+          <h2 className="section-title">
+            Experience Our Daily Rituals
           </h2>
-          <p className="text-[13px] text-[#1f362e] font-light tracking-wide max-w-md mx-auto">
-            Experience our organic remedies in action and shop directly.
+          <p className="section-desc max-w-2xl mx-auto">
+            See how our premium botanical remedies are applied and integrated into a morning or evening wellness routine. Shop directly from each video.
           </p>
         </div>
 
