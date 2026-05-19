@@ -62,7 +62,7 @@ const HeroCategories = () => {
               <div className="hero-cat-circle" style={{ width: '160px', height: '160px' }}>
                 <img src={prob.img} alt={prob.name} className="hero-cat-img" />
               </div>
-              <p className="hero-cat-name text-center" style={{ fontSize: '13.5px', fontFamily: '"Poppins", sans-serif', fontWeight: '500', color: '#591724' }}>{prob.name}</p>
+              <p className="hero-cat-name text-center" style={{ fontSize: '13.5px', fontFamily: '"Poppins", sans-serif', fontWeight: '500', color: '#1f362e' }}>{prob.name}</p>
             </a>
           ))}
         </div>

@@ -235,10 +235,10 @@ const ProductDetails = () => {
               {/* Main Image Outer with Luxury Studio Aura Glow */}
               <div style={{
                 background: 'radial-gradient(circle, rgba(239, 219, 187, 0.22) 0%, #ffffff 85%)',
-                border: '1px solid rgba(158, 42, 68, 0.08)',
+                border: '1px solid rgba(1, 114, 110, 0.08)',
                 borderRadius: '24px',
                 padding: '40px',
-                boxShadow: '0 20px 50px rgba(158, 42, 68, 0.04)',
+                boxShadow: '0 20px 50px rgba(1, 114, 110, 0.04)',
                 position: 'relative',
                 display: 'flex',
                 alignItems: 'center',
@@ -296,7 +296,7 @@ const ProductDetails = () => {
                     }}
                     style={{
                       background: '#ffffff',
-                      border: activeImage === imgUrl ? '1.5px solid var(--primary)' : '1.5px solid rgba(158, 42, 68, 0.08)',
+                      border: activeImage === imgUrl ? '1.5px solid var(--primary)' : '1.5px solid rgba(1, 114, 110, 0.08)',
                       borderRadius: '16px',
                       padding: '8px',
                       cursor: 'pointer',
@@ -305,7 +305,7 @@ const ProductDetails = () => {
                       alignItems: 'center',
                       justifyContent: 'center',
                       height: '84px',
-                      boxShadow: activeImage === imgUrl ? '0 8px 24px rgba(158, 42, 68, 0.06)' : 'none',
+                      boxShadow: activeImage === imgUrl ? '0 8px 24px rgba(1, 114, 110, 0.06)' : 'none',
                       overflow: 'hidden'
                     }}
                     className="contact-submit-btn"
@@ -387,7 +387,7 @@ const ProductDetails = () => {
                   <span style={{
                     fontFamily: '"Jost", sans-serif',
                     fontSize: '11px',
-                    color: 'rgba(158, 42, 68, 0.6)',
+                    color: 'rgba(1, 114, 110, 0.6)',
                     letterSpacing: '0.05em'
                   }}>
                     (Inclusive of all taxes)
@@ -395,7 +395,7 @@ const ProductDetails = () => {
                 </div>
               </div>
 
-              <hr style={{ border: 'none', borderTop: '1px solid rgba(158, 42, 68, 0.08)', margin: '0' }} />
+              <hr style={{ border: 'none', borderTop: '1px solid rgba(1, 114, 110, 0.08)', margin: '0' }} />
 
               {/* Quick Alchemical Properties */}
               <div style={{
@@ -421,7 +421,7 @@ const ProductDetails = () => {
                 </div>
               </div>
 
-              <hr style={{ border: 'none', borderTop: '1px solid rgba(158, 42, 68, 0.08)', margin: '0' }} />
+              <hr style={{ border: 'none', borderTop: '1px solid rgba(1, 114, 110, 0.08)', margin: '0' }} />
 
               {/* Custom Size Selector */}
               <div>
@@ -445,15 +445,15 @@ const ProductDetails = () => {
                       style={{
                         padding: '12px 28px',
                         borderRadius: '6px',
-                        border: selectedSize === size ? '1px solid var(--primary)' : '1px solid rgba(158, 42, 68, 0.12)',
-                        background: selectedSize === size ? 'rgba(158, 42, 68, 0.04)' : '#ffffff',
+                        border: selectedSize === size ? '1px solid var(--primary)' : '1px solid rgba(1, 114, 110, 0.12)',
+                        background: selectedSize === size ? 'rgba(1, 114, 110, 0.04)' : '#ffffff',
                         color: selectedSize === size ? 'var(--primary)' : 'var(--text-mid)',
                         fontFamily: '"Jost", sans-serif',
                         fontSize: '13px',
                         fontWeight: selectedSize === size ? 600 : 400,
                         cursor: 'pointer',
                         transition: 'all 0.3s ease',
-                        boxShadow: selectedSize === size ? '0 8px 20px rgba(158, 42, 68, 0.04)' : 'none'
+                        boxShadow: selectedSize === size ? '0 8px 20px rgba(1, 114, 110, 0.04)' : 'none'
                       }}
                     >
                       {size} {size === '100ml' && <span style={{ fontSize: '10px', opacity: 0.7 }}> (Best Value)</span>}
@@ -470,7 +470,7 @@ const ProductDetails = () => {
                   display: 'flex',
                   alignItems: 'center',
                   background: '#ffffff',
-                  border: '1px solid rgba(158, 42, 68, 0.12)',
+                  border: '1px solid rgba(1, 114, 110, 0.12)',
                   borderRadius: '6px',
                   padding: '6px 16px',
                   height: '56px'
@@ -529,16 +529,16 @@ const ProductDetails = () => {
         <div className="section-container">
           <div style={{
             background: '#ffffff',
-            border: '1px solid rgba(158, 42, 68, 0.08)',
+            border: '1px solid rgba(1, 114, 110, 0.08)',
             borderRadius: '24px',
             padding: '48px',
-            boxShadow: '0 16px 48px rgba(158, 42, 68, 0.02)'
+            boxShadow: '0 16px 48px rgba(1, 114, 110, 0.02)'
           }}>
             
             {/* Tab Headers */}
             <div style={{
               display: 'flex',
-              borderBottom: '1px solid rgba(158, 42, 68, 0.08)',
+              borderBottom: '1px solid rgba(1, 114, 110, 0.08)',
               gap: '40px',
               marginBottom: '36px'
             }}>
@@ -620,7 +620,7 @@ const ProductDetails = () => {
                   <p style={{ fontFamily: '"Jost", sans-serif', fontSize: '14.5px', color: 'var(--text-mid)', lineHeight: '1.8', fontWeight: 300, marginBottom: '20px' }}>
                     {profile.alchemy}
                   </p>
-                  <p style={{ fontFamily: '"Jost", sans-serif', fontSize: '13.5px', color: 'rgba(158, 42, 68, 0.7)', lineHeight: '1.6', fontWeight: 300 }}>
+                  <p style={{ fontFamily: '"Jost", sans-serif', fontSize: '13.5px', color: 'rgba(1, 114, 110, 0.7)', lineHeight: '1.6', fontWeight: 300 }}>
                     <em>* Certified Organic. Free from parabens, synthetic fragrances, petrochemical pollutants, and animal-derived thickeners. Cruelty-free and vegan.</em>
                   </p>
                 </div>

@@ -17,7 +17,7 @@ const CartItem = ({ item, isDrawer = false }) => {
         display: 'flex',
         gap: '16px',
         padding: isDrawer ? '18px 0' : '22px 0',
-        borderBottom: '1px solid rgba(158, 42, 68,0.07)',
+        borderBottom: '1px solid rgba(1,114,110,0.07)',
         alignItems: 'center',
         animation: 'fadeUp 300ms ease forwards',
       }}
@@ -31,7 +31,7 @@ const CartItem = ({ item, isDrawer = false }) => {
           borderRadius: '12px',
           overflow: 'hidden',
           background: 'var(--bg-mist)',
-          border: '1px solid rgba(158, 42, 68,0.08)',
+          border: '1px solid rgba(1,114,110,0.08)',
         }}
       >
         <img
@@ -68,7 +68,7 @@ const CartItem = ({ item, isDrawer = false }) => {
         {/* Qty + Price */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '10px' }}>
           {/* Qty stepper */}
-          <div style={{ display: 'flex', alignItems: 'center', borderRadius: '20px', border: '1.5px solid rgba(158, 42, 68,0.15)', overflow: 'hidden', background: '#fff' }}>
+          <div style={{ display: 'flex', alignItems: 'center', borderRadius: '20px', border: '1.5px solid rgba(1,114,110,0.15)', overflow: 'hidden', background: '#fff' }}>
             <button
               onClick={() => handleQty(item.quantity - 1)}
               style={{ width: '30px', height: '30px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)', background: 'none', border: 'none', cursor: 'pointer', fontSize: '11px' }}

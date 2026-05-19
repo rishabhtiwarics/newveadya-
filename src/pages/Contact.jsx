@@ -77,10 +77,10 @@ const Contact = () => {
               {/* Apothecary Sanctuary Card */}
               <div style={{
                 background: '#ffffff',
-                border: '1px solid rgba(158, 42, 68, 0.08)',
+                border: '1px solid rgba(1, 114, 110, 0.08)',
                 borderRadius: '24px',
                 padding: '40px',
-                boxShadow: '0 16px 40px rgba(158, 42, 68, 0.02)'
+                boxShadow: '0 16px 40px rgba(1, 114, 110, 0.02)'
               }}>
                 <span style={{
                   fontFamily: '"Jost", sans-serif',
@@ -124,7 +124,7 @@ const Contact = () => {
                       height: '44px',
                       borderRadius: '50%',
                       background: 'rgba(239, 219, 187, 0.25)',
-                      border: '1px solid rgba(158, 42, 68, 0.06)',
+                      border: '1px solid rgba(1, 114, 110, 0.06)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -144,7 +144,7 @@ const Contact = () => {
                       height: '44px',
                       borderRadius: '50%',
                       background: 'rgba(239, 219, 187, 0.25)',
-                      border: '1px solid rgba(158, 42, 68, 0.06)',
+                      border: '1px solid rgba(1, 114, 110, 0.06)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -163,10 +163,10 @@ const Contact = () => {
               {/* Support & Ritual Care Card */}
               <div style={{
                 background: '#ffffff',
-                border: '1px solid rgba(158, 42, 68, 0.08)',
+                border: '1px solid rgba(1, 114, 110, 0.08)',
                 borderRadius: '24px',
                 padding: '40px',
-                boxShadow: '0 16px 40px rgba(158, 42, 68, 0.02)'
+                boxShadow: '0 16px 40px rgba(1, 114, 110, 0.02)'
               }}>
                 <span style={{
                   fontFamily: '"Jost", sans-serif',
@@ -222,10 +222,10 @@ const Contact = () => {
             {/* ── Right Column: Interactive Message Form ── */}
             <div style={{
               background: '#ffffff',
-              border: '1px solid rgba(158, 42, 68, 0.08)',
+              border: '1px solid rgba(1, 114, 110, 0.08)',
               borderRadius: '24px',
               padding: '48px',
-              boxShadow: '0 24px 64px rgba(158, 42, 68, 0.04)',
+              boxShadow: '0 24px 64px rgba(1, 114, 110, 0.04)',
               position: 'relative'
             }}>
 
@@ -242,7 +242,7 @@ const Contact = () => {
                     width: '64px',
                     height: '64px',
                     borderRadius: '50%',
-                    background: 'rgba(158, 42, 68, 0.05)',
+                    background: 'rgba(1, 114, 110, 0.05)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -339,7 +339,7 @@ const Contact = () => {
                         style={{
                           width: '100%',
                           padding: '16px 20px',
-                          border: '1.5px solid rgba(158, 42, 68, 0.1)',
+                          border: '1.5px solid rgba(1, 114, 110, 0.1)',
                           borderRadius: '10px',
                           fontFamily: '"Jost", sans-serif',
                           fontSize: '13.5px',
@@ -374,7 +374,7 @@ const Contact = () => {
                         style={{
                           width: '100%',
                           padding: '16px 20px',
-                          border: '1.5px solid rgba(158, 42, 68, 0.1)',
+                          border: '1.5px solid rgba(1, 114, 110, 0.1)',
                           borderRadius: '10px',
                           fontFamily: '"Jost", sans-serif',
                           fontSize: '13.5px',
@@ -406,7 +406,7 @@ const Contact = () => {
                         style={{
                           width: '100%',
                           padding: '16px 20px',
-                          border: '1.5px solid rgba(158, 42, 68, 0.1)',
+                          border: '1.5px solid rgba(1, 114, 110, 0.1)',
                           borderRadius: '10px',
                           fontFamily: '"Jost", sans-serif',
                           fontSize: '13.5px',
@@ -447,7 +447,7 @@ const Contact = () => {
                         style={{
                           width: '100%',
                           padding: '18px 20px',
-                          border: '1.5px solid rgba(158, 42, 68, 0.1)',
+                          border: '1.5px solid rgba(1, 114, 110, 0.1)',
                           borderRadius: '10px',
                           fontFamily: '"Jost", sans-serif',
                           fontSize: '13.5px',
@@ -520,7 +520,7 @@ const Contact = () => {
               transform: 'translate(-50%, -50%)',
               width: '280px',
               height: '280px',
-              background: 'rgba(250, 227, 231, 0.05)',
+              background: 'rgba(226, 213, 195, 0.05)',
               filter: 'blur(70px)',
               borderRadius: '50%',
               pointerEvents: 'none',
@@ -540,7 +540,7 @@ const Contact = () => {
               <div style={{
                 width: '60px',
                 height: '1.5px',
-                background: 'linear-gradient(90deg, var(--bloom-pale) 0%, rgba(250, 227, 231, 0.1) 100%)',
+                background: 'linear-gradient(90deg, var(--bloom-pale) 0%, rgba(226, 213, 195, 0.1) 100%)',
                 margin: '14px 0 22px'
               }} />
 
@@ -556,7 +556,7 @@ const Contact = () => {
                   background: 'var(--bloom-pale)',
                   color: 'var(--primary)',
                   border: 'none',
-                  boxShadow: '0 8px 24px rgba(158, 42, 68, 0.2)',
+                  boxShadow: '0 8px 24px rgba(1, 114, 110, 0.2)',
                   position: 'relative',
                   zIndex: 4
                 }}

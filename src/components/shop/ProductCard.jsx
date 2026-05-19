@@ -39,7 +39,7 @@ const ProductCard = ({ product }) => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: '0 2px 10px rgba(158, 42, 68,0.35)',
+                boxShadow: '0 2px 10px rgba(1,114,110,0.35)',
               }}
               className="animate-in zoom-in duration-300"
             >

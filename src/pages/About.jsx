@@ -76,7 +76,7 @@ const About = () => {
             
             {/* Card 1: Tall left Card */}
             <div className="bento-card bento-card-tall" style={{
-              backgroundImage: 'linear-gradient(to bottom, rgba(94, 19, 34, 0.4) 0%, rgba(94, 19, 34, 0.8) 100%), url(https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80)',
+              backgroundImage: 'linear-gradient(to bottom, rgba(11, 33, 32, 0.4) 0%, rgba(11, 33, 32, 0.8) 100%), url(https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               display: 'flex',
@@ -193,7 +193,7 @@ const About = () => {
 
               {/* Card 3: Top Right Card (Botanical Photo) */}
               <div className="bento-card" style={{
-                backgroundImage: 'linear-gradient(to bottom, rgba(94, 19, 34, 0.1) 0%, rgba(94, 19, 34, 0.6) 100%), url(https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=800&q=80)',
+                backgroundImage: 'linear-gradient(to bottom, rgba(11, 33, 32, 0.1) 0%, rgba(11, 33, 32, 0.6) 100%), url(https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=800&q=80)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 borderRadius: '24px',
@@ -240,7 +240,7 @@ const About = () => {
               {/* Card 4: Bottom Middle Card (Lives Transformed) */}
               <div className="bento-card" style={{
                 background: 'var(--bg-mist)',
-                border: '1.5px solid rgba(158, 42, 68, 0.08)',
+                border: '1.5px solid rgba(1, 114, 110, 0.08)',
                 borderRadius: '24px',
                 padding: '36px',
                 color: 'var(--text-dark)',
@@ -424,7 +424,7 @@ const About = () => {
 
 
       {/* ── Brand Journey Timeline Section (Figma Exact Replication) ── */}
-      <section style={{ padding: '96px 0 108px', background: '#ffffff', borderTop: '1px solid rgba(158, 42, 68, 0.06)' }}>
+      <section style={{ padding: '96px 0 108px', background: '#ffffff', borderTop: '1px solid rgba(1, 114, 110, 0.06)' }}>
         <div className="section-container">
           
           {/* Header */}
@@ -450,8 +450,8 @@ const About = () => {
             background: '#ffffff',
             borderRadius: '24px',
             overflow: 'hidden',
-            boxShadow: '0 12px 48px rgba(158, 42, 68, 0.04)',
-            border: '1.5px solid rgba(158, 42, 68, 0.06)',
+            boxShadow: '0 12px 48px rgba(1, 114, 110, 0.04)',
+            border: '1.5px solid rgba(1, 114, 110, 0.06)',
             marginBottom: '48px'
           }}>
             
@@ -459,7 +459,7 @@ const About = () => {
             <div className="timeline-column" style={{
               display: 'flex',
               flexDirection: 'column',
-              borderRight: '1px solid rgba(158, 42, 68, 0.06)'
+              borderRight: '1px solid rgba(1, 114, 110, 0.06)'
             }}>
               {/* Image box with big year behind and color overlay */}
               <div style={{
@@ -479,7 +479,7 @@ const About = () => {
                   left: 0,
                   right: 0,
                   bottom: 0,
-                  background: 'rgba(158, 42, 68, 0.08)'
+                  background: 'rgba(1, 114, 110, 0.08)'
                 }} />
                 
                 {/* Year Number overlay (opacity 0.08) */}
@@ -559,7 +559,7 @@ const About = () => {
             <div className="timeline-column" style={{
               display: 'flex',
               flexDirection: 'column',
-              borderRight: '1px solid rgba(158, 42, 68, 0.06)'
+              borderRight: '1px solid rgba(1, 114, 110, 0.06)'
             }}>
               <div style={{
                 height: '220px',
@@ -652,7 +652,7 @@ const About = () => {
             <div className="timeline-column" style={{
               display: 'flex',
               flexDirection: 'column',
-              borderRight: '1px solid rgba(158, 42, 68, 0.06)'
+              borderRight: '1px solid rgba(1, 114, 110, 0.06)'
             }}>
               <div style={{
                 height: '220px',
@@ -670,7 +670,7 @@ const About = () => {
                   left: 0,
                   right: 0,
                   bottom: 0,
-                  background: 'rgba(56, 7, 18, 0.06)'
+                  background: 'rgba(13, 42, 41, 0.06)'
                 }} />
                 
                 <div style={{
@@ -745,7 +745,7 @@ const About = () => {
             <div className="timeline-column" style={{
               display: 'flex',
               flexDirection: 'column',
-              borderRight: '1px solid rgba(158, 42, 68, 0.06)'
+              borderRight: '1px solid rgba(1, 114, 110, 0.06)'
             }}>
               <div style={{
                 height: '220px',
@@ -942,7 +942,7 @@ const About = () => {
               left: '10%',
               right: '10%',
               height: '1px',
-              background: 'rgba(158, 42, 68, 0.15)',
+              background: 'rgba(1, 114, 110, 0.15)',
               transform: 'translateY(-50%)',
               zIndex: 1
             }} />
@@ -958,7 +958,7 @@ const About = () => {
                     borderRadius: '50%',
                     background: 'var(--primary)',
                     border: '3px solid #ffffff',
-                    boxShadow: '0 0 0 2px rgba(158, 42, 68, 0.15)',
+                    boxShadow: '0 0 0 2px rgba(1, 114, 110, 0.15)',
                     cursor: 'pointer',
                     transform: 'scale(1)',
                     transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)'

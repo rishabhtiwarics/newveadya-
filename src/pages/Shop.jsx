@@ -132,7 +132,7 @@ const ShopPage = () => {
                 onClick={() => {
                   setActiveProblem('All');
                 }}
-                className="text-xs text-[#9e2a44] hover:text-[#d65a77] font-semibold flex items-center gap-1 cursor-pointer w-fit self-start sm:self-auto bg-white border border-gray-100 px-3 py-1.5 rounded-lg shadow-2xs hover:shadow-xs transition-all"
+                className="text-xs text-[#114232] hover:text-[#2d6b56] font-semibold flex items-center gap-1 cursor-pointer w-fit self-start sm:self-auto bg-white border border-gray-100 px-3 py-1.5 rounded-lg shadow-2xs hover:shadow-xs transition-all"
               >
                 Clear Concern Filter <i className="fa-solid fa-xmark" />
               </button>
@@ -225,7 +225,7 @@ const ShopPage = () => {
               transform: 'translate(-50%, -50%)',
               width: '280px',
               height: '280px',
-              background: 'rgba(250, 227, 231, 0.05)',
+              background: 'rgba(226, 213, 195, 0.05)',
               filter: 'blur(70px)',
               borderRadius: '50%',
               pointerEvents: 'none',
@@ -245,7 +245,7 @@ const ShopPage = () => {
               <div style={{
                 width: '60px',
                 height: '1.5px',
-                background: 'linear-gradient(90deg, var(--bloom-pale) 0%, rgba(250, 227, 231, 0.1) 100%)',
+                background: 'linear-gradient(90deg, var(--bloom-pale) 0%, rgba(226, 213, 195, 0.1) 100%)',
                 margin: '14px 0 22px'
               }} />
 
@@ -259,7 +259,7 @@ const ShopPage = () => {
                   background: 'var(--bloom-pale)',
                   color: 'var(--primary)',
                   border: 'none',
-                  boxShadow: '0 8px 24px rgba(158, 42, 68, 0.2)',
+                  boxShadow: '0 8px 24px rgba(1, 114, 110, 0.2)',
                   position: 'relative',
                   zIndex: 4
                 }}

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
+import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-import 'swiper/css/pagination';
 
 const Hero = () => {
   const slidesData = [
@@ -23,15 +22,18 @@ const Hero = () => {
 
   return (
     <section className="hero-section">
-      <div className="hero-container">
+      <div className="hero-container relative">
         <Swiper
-          modules={[Autoplay, EffectFade, Pagination]}
+          modules={[Autoplay, EffectFade, Navigation]}
           effect="fade"
           fadeEffect={{ crossFade: true }}
           loop={true}
           speed={900}
           autoplay={{ delay: 2800, disableOnInteraction: false, pauseOnMouseEnter: false }}
-          pagination={{ clickable: true }}
+          navigation={{
+            prevEl: '.hero-prev-btn',
+            nextEl: '.hero-next-btn',
+          }}
           className="swiper-hero"
         >
           {slidesData.map((slide) => (
@@ -84,6 +86,16 @@ const Hero = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* Custom Navigation Buttons (positioned in place of pagination bullets) */}
+        <div className="hero-nav-wrapper">
+          <button className="hero-prev-btn" aria-label="Previous slide">
+            <i className="fa-solid fa-chevron-left" />
+          </button>
+          <button className="hero-next-btn" aria-label="Next slide">
+            <i className="fa-solid fa-chevron-right" />
+          </button>
+        </div>
       </div>
     </section>
   );
