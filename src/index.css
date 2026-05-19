@@ -2067,14 +2067,14 @@ h6 {
 
 
 
-/* ─── FULL VEDA EDIT (RITUAL COLLECTION) SECTION ─── */
-.full-veda-section {
+/* ─── FULL VEADYA EDIT (RITUAL COLLECTION) SECTION ─── */
+.full-veadya-section {
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, var(--bg-deep) 0%, var(--primary-dk) 50%, var(--primary) 100%);
 }
 
-.full-veda-glow-1 {
+.full-veadya-glow-1 {
   position: absolute;
   top: -20%;
   left: -10%;
@@ -2087,7 +2087,7 @@ h6 {
   background: radial-gradient(circle, var(--primary-lt) 0%, transparent 70%);
 }
 
-.full-veda-glow-2 {
+.full-veadya-glow-2 {
   position: absolute;
   bottom: -20%;
   right: -10%;
@@ -2100,7 +2100,7 @@ h6 {
   background: radial-gradient(circle, var(--bloom-pale) 0%, transparent 75%);
 }
 
-.full-veda-blob-1 {
+.full-veadya-blob-1 {
   position: absolute;
   width: 320px;
   height: 320px;
@@ -2111,7 +2111,7 @@ h6 {
   pointer-events: none;
 }
 
-.full-veda-blob-2 {
+.full-veadya-blob-2 {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -5082,7 +5082,7 @@ h6 {
 }
 
 /* ═══════════════════════════════════════════
-   THE PILLARS OF VEDA RITUAL CSS STYLES
+   THE PILLARS OF VEADYA CSS STYLES
    ═══════════════════════════════════════════ */
 .pillar-item:hover .pillar-icon-outer {
   background: var(--bloom-pale) !important;
@@ -5112,7 +5112,7 @@ h6 {
 }
 
 /* ═══════════════════════════════════════════
-   THE JOURNEY OF VEDA RITUAL TIMELINE STYLES
+   THE JOURNEY OF VEADYA TIMELINE STYLES
    ═══════════════════════════════════════════ */
 .timeline-row-container {
   transition: box-shadow 0.4s ease;

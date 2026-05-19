@@ -67,7 +67,7 @@ const About = () => {
               letterSpacing: '0.01em',
               textAlign: 'center'
             }}>
-              We believe that true wellness is a harmonious flow of mind, body, and consciousness. Veda Ritual was born out of a desire to reconcile ancient Ayurvedic wisdom with the speed and rigor of contemporary life, crafting high-potency daily essentials that restore natural equilibrium.
+              We believe that true wellness is a harmonious flow of mind, body, and consciousness. Veadya was born out of a desire to reconcile ancient Ayurvedic wisdom with the speed and rigor of contemporary life, crafting high-potency daily essentials that restore natural equilibrium.
             </p>
           </div>
 
@@ -280,7 +280,7 @@ const About = () => {
                     color: 'var(--text-mid)',
                     margin: 0
                   }}>
-                    "Veda Ritual gave me back mornings I had stopped looking forward to."
+                    "Veadya gave me back mornings I had stopped looking forward to."
                   </p>
                 </div>
               </div>
@@ -357,8 +357,8 @@ const About = () => {
       {/* ── Founder Story Section (Alt2 Immersive Mode) ── */}
       <section className="founder-alt2-section">
         {/* Ambient glows to keep consistency */}
-        <div className="full-veda-glow-1"></div>
-        <div className="full-veda-glow-2"></div>
+        <div className="full-veadya-glow-1"></div>
+        <div className="full-veadya-glow-2"></div>
         
         <div className="section-container founder-alt2-inner">
           
@@ -385,7 +385,7 @@ const About = () => {
             </div>
 
             <p className="founder-alt2-para">
-              Veda Ritual was born to bridge these pristine self-care traditions with clinical extraction standards — creating elevated, high-performance daily formulas that effortlessly restore harmony to your contemporary lifestyle.
+              Veadya was born to bridge these pristine self-care traditions with clinical extraction standards — creating elevated, high-performance daily formulas that effortlessly restore harmony to your contemporary lifestyle.
             </p>
 
             <div className="founder-alt2-pills">
@@ -433,7 +433,7 @@ const About = () => {
               <i className="fa-solid fa-clock-rotate-left section-eyebrow-icon" />
               Our Journey <span className="eyebrow-dot">·</span> A Decade of Craft
             </p>
-            <h2 className="section-title">The Journey of Veda Ritual</h2>
+            <h2 className="section-title">The Journey of Veadya</h2>
             <div style={{
               width: '40px',
               height: '2px',
@@ -643,7 +643,7 @@ const About = () => {
                   fontWeight: 300,
                   margin: 0
                 }}>
-                  Veda Ritual launches in three wellness stores across Delhi and Mumbai. The Immunity Drops sell out in the first week.
+                  Veadya launches in three wellness stores across Delhi and Mumbai. The Immunity Drops sell out in the first week.
                 </p>
               </div>
             </div>

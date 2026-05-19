@@ -5,7 +5,7 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
-const vedaProducts = [
+const veadyaProducts = [
   { id: 1, type: "OILS", name: "Brahmi Scalp Oil", price: "56.00", image: "/images/product/1.jfif" },
   { id: 2, type: "CAPSULES", name: "Shatavari Balance", price: "68.00", image: "/images/product/2.jfif" },
   { id: 3, type: "TEAS", name: "Tulsi Calm Blend", price: "32.00", image: "/images/product/3.jfif" },
@@ -13,25 +13,25 @@ const vedaProducts = [
   { id: 5, type: "HERBS", name: "Triphala Cleanse", price: "42.00", image: "/images/product/6.jfif" },
 ];
 
-const FullVedaEdit = () => {
+const FullVeadyaEdit = () => {
   // Create an array with enough slides to loop smoothly
-  const displayProducts = [...vedaProducts, ...vedaProducts, ...vedaProducts];
+  const displayProducts = [...veadyaProducts, ...veadyaProducts, ...veadyaProducts];
 
   return (
-    <section className="py-24 text-white full-veda-section">
+    <section className="py-24 text-white full-veadya-section">
       {/* Background Ambient Glows */}
-      <div className="full-veda-glow-1"></div>
-      <div className="full-veda-glow-2"></div>
+      <div className="full-veadya-glow-1"></div>
+      <div className="full-veadya-glow-2"></div>
       
       {/* Decorative Brand Blobs for Modern Background Depth */}
-      <div className="full-veda-blob-1"></div>
-      <div className="full-veda-blob-2"></div>
+      <div className="full-veadya-blob-1"></div>
+      <div className="full-veadya-blob-2"></div>
 
       <div className="section-container relative z-10">
         {/* Header Content */}
         <div className="text-center mb-12">
           <p className="text-[#9abcb9] text-[10px] uppercase tracking-[0.25em] font-medium mb-4 flex items-center justify-center gap-2">
-            <span className="text-xs">✦</span> THE FULL VEDA EDIT
+            <span className="text-xs">✦</span> THE FULL VEADYA EDIT
           </p>
           <h2 className="font-serif text-[42px] md:text-[56px] leading-[1.1] mb-4 font-normal text-white">
             Ritual Collection
@@ -111,4 +111,4 @@ const FullVedaEdit = () => {
   );
 };
 
-export default FullVedaEdit;
+export default FullVeadyaEdit;

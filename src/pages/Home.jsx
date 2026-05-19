@@ -5,8 +5,9 @@ import Marquee from '../components/home/Marquee';
 import Categories from '../components/home/Categories';
 import Products from '../components/home/Products';
 import OurStory from '../components/home/OurStory';
-import FullVedaEdit from '../components/home/FullVedaEdit';
+import FullVeadyaEdit from '../components/home/FullVeadyaEdit';
 import CommunitySection from '../components/home/CommunitySection';
+import WatchShop from '../components/home/WatchShop';
 
 function Home() {
   return (
@@ -17,8 +18,9 @@ function Home() {
       <Products />
       <OurStory />
       <Categories />
-      <FullVedaEdit />
+      <FullVeadyaEdit />
       <CommunitySection />
+      <WatchShop />
     </>
   );
 }

@@ -112,7 +112,7 @@ const Contact = () => {
                   fontWeight: 300,
                   marginBottom: '32px'
                 }}>
-                  102, Veda House, Ganga Canal Road,<br />
+                  102, Veadya House, Ganga Canal Road,<br />
                   Rishikesh, Uttarakhand - 249201, India
                 </p>
 
@@ -154,7 +154,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <span style={{ fontFamily: '"Jost", sans-serif', fontSize: '9px', fontWeight: 600, color: 'var(--primary)', display: 'block', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Email Inquiries</span>
-                      <a href="mailto:wisdom@vedaritual.com" style={{ fontFamily: '"Jost", sans-serif', fontSize: '14px', fontWeight: 500, color: 'var(--text-dark)', textDecoration: 'none', transition: 'color 0.3s ease' }} className="contact-link-hover">wisdom@vedaritual.com</a>
+                      <a href="mailto:wisdom@veadya.com" style={{ fontFamily: '"Jost", sans-serif', fontSize: '14px', fontWeight: 500, color: 'var(--text-dark)', textDecoration: 'none', transition: 'color 0.3s ease' }} className="contact-link-hover">wisdom@veadya.com</a>
                     </div>
                   </div>
                 </div>

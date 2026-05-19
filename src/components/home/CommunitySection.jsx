@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 const communityData = [
   {
     tag: "Ashwagandha Gold",
-    text: '"Veda Ritual gave me back mornings I had stopped looking forward to. The Ashwagandha Gold settled my nervous system like nothing else had — and I have tried everything."',
+    text: '"Veadya gave me back mornings I had stopped looking forward to. The Ashwagandha Gold settled my nervous system like nothing else had — and I have tried everything."',
     avatar: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=120&q=80",
     name: "Priya Sharma",
     role: "Yoga Instructor · Mumbai",
