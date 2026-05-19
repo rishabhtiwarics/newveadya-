@@ -32,7 +32,7 @@ const SearchOverlay = () => {
         style={{
           position: 'fixed',
           inset: 0,
-          background: 'rgba(11, 33, 32, 0.45)',
+          background: 'rgba(94, 19, 34, 0.45)',
           backdropFilter: 'blur(6px)',
           zIndex: 999,
           opacity: isSearchOpen ? 1 : 0,
@@ -52,7 +52,7 @@ const SearchOverlay = () => {
           height: '52vh',
           background: '#ffffff',
           zIndex: 1000,
-          boxShadow: '0 12px 48px rgba(1, 114, 110, 0.16)',
+          boxShadow: '0 12px 48px rgba(158, 42, 68, 0.16)',
           borderBottom: '3px solid var(--primary)',
           transform: isSearchOpen ? 'translateY(0)' : 'translateY(-100%)',
           opacity: isSearchOpen ? 1 : 0,
@@ -84,7 +84,7 @@ const SearchOverlay = () => {
                 width: '38px',
                 height: '38px',
                 borderRadius: '50%',
-                border: '1.5px solid rgba(1, 114, 110, 0.12)',
+                border: '1.5px solid rgba(158, 42, 68, 0.12)',
                 background: '#fff',
                 color: 'var(--primary)',
                 display: 'flex',
@@ -112,7 +112,7 @@ const SearchOverlay = () => {
                   width: '100%',
                   background: 'transparent',
                   border: 'none',
-                  borderBottom: '2px solid rgba(1, 114, 110, 0.15)',
+                  borderBottom: '2px solid rgba(158, 42, 68, 0.15)',
                   padding: '12px 0 16px',
                   fontFamily: '"Cormorant Garamond", serif',
                   fontSize: '28px',
@@ -165,7 +165,7 @@ const SearchOverlay = () => {
                 alignItems: 'center',
                 gap: '12px'
               }}>
-                Trending Rituals <span style={{ flex: 1, height: '1px', background: 'rgba(1, 114, 110, 0.1)' }} />
+                Trending Rituals <span style={{ flex: 1, height: '1px', background: 'rgba(158, 42, 68, 0.1)' }} />
               </h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 {popularSearches.map((item) => (
@@ -187,7 +187,7 @@ const SearchOverlay = () => {
                     }}
                     className="search-trending-item"
                   >
-                    <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: 'rgba(1, 114, 110, 0.3)' }} />
+                    <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: 'rgba(158, 42, 68, 0.3)' }} />
                     {item}
                   </button>
                 ))}
@@ -208,7 +208,7 @@ const SearchOverlay = () => {
                 alignItems: 'center',
                 gap: '12px'
               }}>
-                Quick Explore <span style={{ flex: 1, height: '1px', background: 'rgba(1, 114, 110, 0.1)' }} />
+                Quick Explore <span style={{ flex: 1, height: '1px', background: 'rgba(158, 42, 68, 0.1)' }} />
               </h3>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                 {quickCategories.map((item) => (
@@ -222,7 +222,7 @@ const SearchOverlay = () => {
                       textTransform: 'uppercase',
                       color: 'var(--text-mid)',
                       background: 'var(--bg-mist)',
-                      border: '1.5px solid rgba(1, 114, 110, 0.1)',
+                      border: '1.5px solid rgba(158, 42, 68, 0.1)',
                       borderRadius: '20px',
                       padding: '7px 14px',
                       cursor: 'pointer',

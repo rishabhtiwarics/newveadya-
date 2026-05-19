@@ -42,13 +42,13 @@ const MobileMenu = () => {
 
         {/* ── Header ── */}
         <div className="px-6 py-5 flex justify-between items-center"
-          style={{ background: 'linear-gradient(135deg,#f5f9f8 0%,#eaf3f2 100%)', borderBottom: '1px solid rgba(1,114,110,0.1)' }}>
+          style={{ background: 'linear-gradient(135deg,#f5f9f8 0%,#eaf3f2 100%)', borderBottom: '1px solid rgba(158, 42, 68,0.1)' }}>
           <Link to="/" className="flex items-center" onClick={close}>
             <img src="/logo/bgremovepng.png" alt="Veadya" style={{ height: '30px', width: 'auto', display: 'block' }} />
           </Link>
           <button onClick={close}
             className="w-9 h-9 flex items-center justify-center rounded-full transition-all hover:bg-primary/10"
-            style={{ border: '1px solid rgba(1,114,110,0.15)', color: 'var(--primary)' }}>
+            style={{ border: '1px solid rgba(158, 42, 68,0.15)', color: 'var(--primary)' }}>
             <i className="fa-solid fa-xmark" style={{ fontSize: '14px' }}></i>
           </button>
         </div>
@@ -65,7 +65,7 @@ const MobileMenu = () => {
                 onClick={close}
                 className="flex items-center py-4 transition-all"
                 style={{
-                  borderBottom: '1px solid rgba(46,110,126,0.07)',
+                  borderBottom: '1px solid rgba(214, 90, 119,0.07)',
                   fontFamily: '"Jost", sans-serif',
                   fontSize: '15px',
                   fontWeight: isActive(link.path) ? 600 : 400,
@@ -83,7 +83,7 @@ const MobileMenu = () => {
                 onClick={() => setShopOpen((v) => !v)}
                 className="w-full flex items-center justify-between py-4 transition-all"
                 style={{
-                  borderBottom: shopOpen ? 'none' : '1px solid rgba(46,110,126,0.07)',
+                  borderBottom: shopOpen ? 'none' : '1px solid rgba(214, 90, 119,0.07)',
                   fontFamily: '"Jost", sans-serif',
                   fontSize: '15px',
                   fontWeight: shopOpen ? 600 : 400,
@@ -99,7 +99,7 @@ const MobileMenu = () => {
                     width: '28px',
                     height: '28px',
                     borderRadius: '50%',
-                    background: shopOpen ? 'var(--primary)' : 'rgba(1,114,110,0.08)',
+                    background: shopOpen ? 'var(--primary)' : 'rgba(158, 42, 68,0.08)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -124,7 +124,7 @@ const MobileMenu = () => {
                   maxHeight: shopOpen ? '400px' : '0px',
                   overflow: 'hidden',
                   transition: 'max-height 0.35s cubic-bezier(0.4,0,0.2,1)',
-                  borderBottom: shopOpen ? '1px solid rgba(46,110,126,0.07)' : 'none',
+                  borderBottom: shopOpen ? '1px solid rgba(214, 90, 119,0.07)' : 'none',
                 }}
               >
                 <div className="pl-3 pr-1 pb-3 pt-1">
@@ -137,7 +137,7 @@ const MobileMenu = () => {
                       style={{
                         marginBottom: idx < shopCategories.length - 1 ? '2px' : 0,
                       }}
-                      onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(1,114,110,0.06)'}
+                      onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(158, 42, 68,0.06)'}
                       onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}
                     >
                       <span
@@ -145,7 +145,7 @@ const MobileMenu = () => {
                           width: '32px',
                           height: '32px',
                           borderRadius: '50%',
-                          background: 'rgba(1,114,110,0.1)',
+                          background: 'rgba(158, 42, 68,0.1)',
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
@@ -165,7 +165,7 @@ const MobileMenu = () => {
                       </span>
                       <i
                         className="fa-solid fa-arrow-right ml-auto"
-                        style={{ fontSize: '9px', color: 'rgba(1,114,110,0.35)' }}
+                        style={{ fontSize: '9px', color: 'rgba(158, 42, 68,0.35)' }}
                       ></i>
                     </Link>
                   ))}
@@ -185,7 +185,7 @@ const MobileMenu = () => {
             {isAuthenticated ? (
               <div className="space-y-3">
                 <div className="flex items-center gap-4 p-4 rounded-2xl"
-                  style={{ background: 'linear-gradient(135deg,#f5f9f8,#eaf3f2)', border: '1px solid rgba(1,114,110,0.08)' }}>
+                  style={{ background: 'linear-gradient(135deg,#f5f9f8,#eaf3f2)', border: '1px solid rgba(158, 42, 68,0.08)' }}>
                   <img src={user.image || '/images/user-avatar.png'} alt="" className="w-11 h-11 rounded-full border-2 border-white shadow-sm" />
                   <div>
                     <p className="font-semibold text-text-dark text-sm">{user.name}</p>
@@ -207,9 +207,9 @@ const MobileMenu = () => {
             ) : (
               <Link to="/login" onClick={close}
                 className="flex items-center gap-4 py-4 px-5 rounded-2xl transition-all group"
-                style={{ background: 'rgba(1,114,110,0.05)', border: '1px solid rgba(1,114,110,0.1)' }}>
+                style={{ background: 'rgba(158, 42, 68,0.05)', border: '1px solid rgba(158, 42, 68,0.1)' }}>
                 <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm"
-                  style={{ color: 'var(--primary)', border: '1px solid rgba(1,114,110,0.12)' }}>
+                  style={{ color: 'var(--primary)', border: '1px solid rgba(158, 42, 68,0.12)' }}>
                   <i className="fa-regular fa-user text-sm"></i>
                 </div>
                 <span className="text-text-dark font-medium text-sm">Sign In / Register</span>
@@ -219,7 +219,7 @@ const MobileMenu = () => {
         </div>
 
         {/* ── Footer ── */}
-        <div className="px-6 py-5" style={{ borderTop: '1px solid rgba(46,110,126,0.07)' }}>
+        <div className="px-6 py-5" style={{ borderTop: '1px solid rgba(214, 90, 119,0.07)' }}>
           <p className="text-center font-sans"
             style={{ fontSize: '9px', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(42,75,74,0.4)' }}>
             Pure · Potent · Ayurvedic

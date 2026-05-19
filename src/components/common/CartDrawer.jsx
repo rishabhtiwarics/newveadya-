@@ -21,7 +21,7 @@ const CartDrawer = () => {
       
       <div className="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl shadow-black/20 flex flex-col animate-in slide-in-from-right duration-500">
         {/* Header */}
-        <div className="px-6 py-5 flex justify-between items-center" style={{background: 'linear-gradient(135deg, #f5f9f8 0%, #eaf3f2 100%)', borderBottom: '1px solid rgba(1,114,110,0.1)'}}>
+        <div className="px-6 py-5 flex justify-between items-center" style={{background: 'linear-gradient(135deg, #f5f9f8 0%, #eaf3f2 100%)', borderBottom: '1px solid rgba(158, 42, 68,0.1)'}}>
           <div>
             <h2 className="font-serif text-text-dark flex items-center gap-2.5" style={{fontSize:'19px', fontWeight:500, letterSpacing:'0.03em'}}>
               <i className="fa-solid fa-bag-shopping text-primary" style={{fontSize:'15px'}}></i> Your Bag
@@ -33,7 +33,7 @@ const CartDrawer = () => {
           <button 
             onClick={() => dispatch(toggleCart())}
             className="w-9 h-9 flex items-center justify-center rounded-full transition-all hover:bg-primary/10"
-            style={{border:'1px solid rgba(1,114,110,0.15)', color:'var(--primary)'}}
+            style={{border:'1px solid rgba(158, 42, 68,0.15)', color:'var(--primary)'}}
           >
             <i className="fa-solid fa-xmark" style={{fontSize:'14px'}}></i>
           </button>
@@ -68,7 +68,7 @@ const CartDrawer = () => {
         </div>
 
         {cartItems.length > 0 && (
-          <div className="px-6 py-6" style={{background: 'linear-gradient(180deg, #f5f9f8 0%, #eaf3f2 100%)', borderTop: '1px solid rgba(1,114,110,0.1)'}}>
+          <div className="px-6 py-6" style={{background: 'linear-gradient(180deg, #f5f9f8 0%, #eaf3f2 100%)', borderTop: '1px solid rgba(158, 42, 68,0.1)'}}>
             {/* Subtotal row */}
             <div className="flex justify-between items-end mb-1">
               <span className="font-sans text-xs uppercase tracking-widest" style={{color:'var(--text-mid)', letterSpacing:'0.15em'}}>Subtotal</span>
@@ -83,11 +83,11 @@ const CartDrawer = () => {
               <span className="flex items-center gap-1 font-sans" style={{fontSize:'9px', color:'var(--primary)', letterSpacing:'0.08em'}}>
                 <i className="fa-solid fa-lock text-[8px]"></i> Secure
               </span>
-              <span style={{width:'1px', height:'10px', background:'rgba(1,114,110,0.2)'}}></span>
+              <span style={{width:'1px', height:'10px', background:'rgba(158, 42, 68,0.2)'}}></span>
               <span className="flex items-center gap-1 font-sans" style={{fontSize:'9px', color:'var(--primary)', letterSpacing:'0.08em'}}>
                 <i className="fa-solid fa-truck-fast text-[8px]"></i> Free shipping ₹999+
               </span>
-              <span style={{width:'1px', height:'10px', background:'rgba(1,114,110,0.2)'}}></span>
+              <span style={{width:'1px', height:'10px', background:'rgba(158, 42, 68,0.2)'}}></span>
               <span className="flex items-center gap-1 font-sans" style={{fontSize:'9px', color:'var(--primary)', letterSpacing:'0.08em'}}>
                 <i className="fa-solid fa-arrow-rotate-left text-[8px]"></i> Easy returns
               </span>
@@ -104,7 +104,7 @@ const CartDrawer = () => {
               <Link 
                 to="/checkout"
                 className="w-full py-4 font-sans font-bold uppercase rounded-xl transition-all hover:bg-primary hover:text-white text-center flex items-center justify-center"
-                style={{fontSize:'10px', letterSpacing:'0.2em', color:'var(--primary)', border:'1.5px solid rgba(1,114,110,0.25)', background:'white'}}
+                style={{fontSize:'10px', letterSpacing:'0.2em', color:'var(--primary)', border:'1.5px solid rgba(158, 42, 68,0.25)', background:'white'}}
                 onClick={() => dispatch(toggleCart())}
               >
                 <i className="fa-solid fa-lock mr-2 text-[9px]"></i> SECURE CHECKOUT

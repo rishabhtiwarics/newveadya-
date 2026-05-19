@@ -29,7 +29,7 @@ const RitualSection = () => {
       <svg width="0" height="0" style={{ position: 'absolute' }}>
         <defs>
           <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#01726E" />
+            <stop offset="0%" stopColor="#9e2a44" />
             <stop offset="100%" stopColor="#338E8B" />
           </linearGradient>
         </defs>

@@ -95,10 +95,10 @@ const Header = () => {
                             <Link
                               key={cat.name}
                               to={`/shop?category=${cat.name}`}
-                              className="group flex flex-col items-center text-center gap-2 p-2 hover:bg-[#e8f0ed] rounded-xl transition-all"
+                              className="group flex flex-col items-center text-center gap-2 p-2 hover:bg-[#fdf4f6] rounded-xl transition-all"
                               onClick={() => setIsShopHovered(false)}
                             >
-                              <div className="w-14 h-14 rounded-full overflow-hidden border border-[#e2ebe7] group-hover:border-primary transition-all flex items-center justify-center bg-gray-50">
+                              <div className="w-14 h-14 rounded-full overflow-hidden border border-[#fbedf0] group-hover:border-primary transition-all flex items-center justify-center bg-gray-50">
                                 <img src={cat.img} alt={cat.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                               </div>
                               <span className="text-[11px] font-semibold tracking-wider text-text-dark group-hover:text-primary transition-colors uppercase">

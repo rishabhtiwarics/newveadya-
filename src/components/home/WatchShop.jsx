@@ -110,7 +110,7 @@ const WatchShop = () => {
             {displayReels.map((reel, index) => (
               <SwiperSlide key={`reel-${index}`}>
                 {/* Reel Card Container */}
-                <div className="bg-white rounded-[12px] border border-[#e2ebe7] p-3 shadow-xs flex flex-col gap-3 transition-transform duration-300 hover:translate-y-[-4px]">
+                <div className="bg-white rounded-[12px] border border-[#fbedf0] p-3 shadow-xs flex flex-col gap-3 transition-transform duration-300 hover:translate-y-[-4px]">
                   
                   {/* Video Block with Overlays */}
                   <div className="aspect-[9/16] rounded-[8px] overflow-hidden relative bg-black">
@@ -147,7 +147,7 @@ const WatchShop = () => {
                   <div className="flex flex-col gap-2.5">
                     <div className="flex items-center gap-2.5">
                       {/* Brand Logo Avatar */}
-                      <div className="w-8 h-8 rounded-full border border-[#e2ebe7] overflow-hidden flex-shrink-0 bg-white flex items-center justify-center p-0.5">
+                      <div className="w-8 h-8 rounded-full border border-[#fbedf0] overflow-hidden flex-shrink-0 bg-white flex items-center justify-center p-0.5">
                         <img 
                           src={reel.avatar} 
                           alt="Veadya" 
@@ -157,17 +157,17 @@ const WatchShop = () => {
 
                       {/* Title & Price */}
                       <div className="min-w-0">
-                        <h3 className="font-sans text-[12px] font-semibold text-[#0b1a14] truncate">
+                        <h3 className="font-sans text-[12px] font-semibold text-[#24060c] truncate">
                           {reel.name}
                         </h3>
-                        <p className="text-[12px] font-bold text-[#114232] mt-0.5">
+                        <p className="text-[12px] font-bold text-[#9e2a44] mt-0.5">
                           ₹ {reel.price} <span className="text-[10px] text-gray-400 line-through font-normal ml-1">₹ {reel.oldPrice}</span>
                         </p>
                       </div>
                     </div>
 
                     {/* Buy Now CTA */}
-                    <button className="w-full bg-[#114232] hover:bg-[#2d6b56] text-white py-2 px-4 rounded-[6px] text-[11px] font-semibold uppercase tracking-[0.1em] transition-colors duration-300 shadow-sm cursor-pointer text-center">
+                    <button className="w-full bg-[#9e2a44] hover:bg-[#d65a77] text-white py-2 px-4 rounded-[6px] text-[11px] font-semibold uppercase tracking-[0.1em] transition-colors duration-300 shadow-sm cursor-pointer text-center">
                       Buy Now
                     </button>
                   </div>
@@ -180,13 +180,13 @@ const WatchShop = () => {
           {/* Custom Navigation Slider Arrows (Figma style overlay) */}
           <button 
             onClick={() => swiperRef.current?.slidePrev()}
-            className="absolute left-[-16px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-[#e2ebe7] text-[#114232] shadow-md flex items-center justify-center transition-all hover:bg-[#114232] hover:text-white hover:border-[#114232] z-20 cursor-pointer"
+            className="absolute left-[-16px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-[#fbedf0] text-[#9e2a44] shadow-md flex items-center justify-center transition-all hover:bg-[#9e2a44] hover:text-white hover:border-[#9e2a44] z-20 cursor-pointer"
           >
             <i className="fa-solid fa-chevron-left text-[13px]" />
           </button>
           <button 
             onClick={() => swiperRef.current?.slideNext()}
-            className="absolute right-[-16px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-[#e2ebe7] text-[#114232] shadow-md flex items-center justify-center transition-all hover:bg-[#114232] hover:text-white hover:border-[#114232] z-20 cursor-pointer"
+            className="absolute right-[-16px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-[#fbedf0] text-[#9e2a44] shadow-md flex items-center justify-center transition-all hover:bg-[#9e2a44] hover:text-white hover:border-[#9e2a44] z-20 cursor-pointer"
           >
             <i className="fa-solid fa-chevron-right text-[13px]" />
           </button>
