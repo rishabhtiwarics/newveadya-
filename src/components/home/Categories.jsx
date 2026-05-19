@@ -44,6 +44,14 @@ const Categories = () => {
           {/* Main Card */}
           <a href={categories[0].link} className="cat-card">
             <img src={categories[0].img} alt={categories[0].title} />
+            <div className="cat-card-overlay" />
+            <div className="cat-card-content">
+              <h3 className="cat-card-title">{categories[0].title}</h3>
+              <p className="cat-card-desc">{categories[0].desc}</p>
+              <span className="cat-card-link">
+                {categories[0].btnText} <i className="fa-solid fa-arrow-right" />
+              </span>
+            </div>
           </a>
 
           {/* Right Column */}
@@ -51,6 +59,14 @@ const Categories = () => {
             {categories.slice(1).map(cat => (
               <a key={cat.id} href={cat.link} className="cat-card">
                 <img src={cat.img} alt={cat.title} />
+                <div className="cat-card-overlay" />
+                <div className="cat-card-content">
+                  <h3 className="cat-card-title">{cat.title}</h3>
+                  <p className="cat-card-desc">{cat.desc}</p>
+                  <span className="cat-card-link">
+                    {cat.btnText} <i className="fa-solid fa-arrow-right" />
+                  </span>
+                </div>
               </a>
             ))}
           </div>

@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
+import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 
 const Hero = () => {
+  const [swiperInstance, setSwiperInstance] = useState(null);
+
   const slidesData = [
     {
       id: 1,
@@ -20,20 +22,35 @@ const Hero = () => {
     }
   ];
 
+  const handlePrev = () => {
+    if (swiperInstance) {
+      swiperInstance.slidePrev();
+      if (swiperInstance.autoplay) {
+        swiperInstance.autoplay.start();
+      }
+    }
+  };
+
+  const handleNext = () => {
+    if (swiperInstance) {
+      swiperInstance.slideNext();
+      if (swiperInstance.autoplay) {
+        swiperInstance.autoplay.start();
+      }
+    }
+  };
+
   return (
     <section className="hero-section">
       <div className="hero-container relative">
         <Swiper
-          modules={[Autoplay, EffectFade, Navigation]}
+          modules={[Autoplay, EffectFade]}
+          onSwiper={setSwiperInstance}
           effect="fade"
           fadeEffect={{ crossFade: true }}
           loop={true}
           speed={900}
           autoplay={{ delay: 2800, disableOnInteraction: false, pauseOnMouseEnter: false }}
-          navigation={{
-            prevEl: '.hero-prev-btn',
-            nextEl: '.hero-next-btn',
-          }}
           className="swiper-hero"
         >
           {slidesData.map((slide) => (
@@ -89,10 +106,10 @@ const Hero = () => {
 
         {/* Custom Navigation Buttons (positioned in place of pagination bullets) */}
         <div className="hero-nav-wrapper">
-          <button className="hero-prev-btn" aria-label="Previous slide">
+          <button className="hero-prev-btn" onClick={handlePrev} aria-label="Previous slide">
             <i className="fa-solid fa-chevron-left" />
           </button>
-          <button className="hero-next-btn" aria-label="Next slide">
+          <button className="hero-next-btn" onClick={handleNext} aria-label="Next slide">
             <i className="fa-solid fa-chevron-right" />
           </button>
         </div>

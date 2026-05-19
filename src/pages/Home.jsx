@@ -7,6 +7,7 @@ import Products from '../components/home/Products';
 import OurStory from '../components/home/OurStory';
 import FullVeadyaEdit from '../components/home/FullVeadyaEdit';
 import CommunitySection from '../components/home/CommunitySection';
+import HomeBottomBanner from '../components/home/HomeBottomBanner';
 import WatchShop from '../components/home/WatchShop';
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
       <Categories />
       <FullVeadyaEdit />
       <CommunitySection />
+      <HomeBottomBanner />
       <WatchShop />
     </>
   );

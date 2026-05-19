@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
+import OfferModal from './components/common/OfferModal';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import About from './pages/About';
@@ -29,6 +30,7 @@ function App() {
         {/* Fallback to Home for simplicity in this demo */}
         <Route path="*"              element={<Home />} />
       </Routes>
+      <OfferModal />
     </Layout>
   );
 }
