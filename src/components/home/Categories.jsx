@@ -5,7 +5,7 @@ const categories = [
     id: 1,
     title: "Botanical Drops",
     desc: "Fast-absorbing liquid extracts for maximum bioavailability — your daily ritual in a single dropper.",
-    img: "/images/2.jfif",
+    img: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80",
     link: "/shop?category=Drop",
     btnText: "SHOP DROPS"
   },
@@ -13,7 +13,7 @@ const categories = [
     id: 2,
     title: "Herbal Capsules",
     desc: "Precision-dosed botanical capsules for effortless, consistent wellness.",
-    img: "/images/7.jfif",
+    img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=600&q=80",
     link: "/shop?category=Capsule",
     btnText: "SHOP CAPSULES"
   },
@@ -21,7 +21,7 @@ const categories = [
     id: 3,
     title: "Cold-Pressed Juices",
     desc: "Nutrient-rich Ayurvedic elixirs crafted fresh from whole botanicals.",
-    img: "/images/9.jfif",
+    img: "https://images.unsplash.com/photo-1610970881699-44a5587caa90?auto=format&fit=crop&w=600&q=80",
     link: "/shop?category=Juice",
     btnText: "SHOP JUICES"
   }

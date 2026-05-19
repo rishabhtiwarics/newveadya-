@@ -1,29 +1,41 @@
 import React from 'react';
 
-const heroCategories = [
+const heroProblems = [
   {
     id: 1,
-    name: 'Juice',
-    subtitle: 'Cold-Pressed Elixirs',
-    icon: 'fa-droplet',
-    img: '/images/9.jfif',
-    link: '/shop?category=Juice',
+    name: 'Immunity Wellness',
+    img: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=300&q=80',
+    link: '/shop?problem=Immunity+Wellness',
   },
   {
     id: 2,
-    name: 'Capsule',
-    subtitle: 'Precision Botanicals',
-    icon: 'fa-capsules',
-    img: '/images/7.jfif',
-    link: '/shop?category=Capsule',
+    name: 'Digestive Wellness',
+    img: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=300&q=80',
+    link: '/shop?problem=Digestive+Wellness',
   },
   {
     id: 3,
-    name: 'Drop',
-    subtitle: 'Liquid Extracts',
-    icon: 'fa-flask-vial',
-    img: '/images/2.jfif',
-    link: '/shop?category=Drop',
+    name: 'Pain Reliever',
+    img: 'https://images.unsplash.com/photo-1579684389782-64d84b5e901d?auto=format&fit=crop&w=300&q=80',
+    link: '/shop?problem=Pain+Reliever',
+  },
+  {
+    id: 4,
+    name: 'Cardiac Wellness',
+    img: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=300&q=80',
+    link: '/shop?problem=Cardiac+Wellness',
+  },
+  {
+    id: 5,
+    name: 'Skin Wellness',
+    img: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=300&q=80',
+    link: '/shop?problem=Skin+Wellness',
+  },
+  {
+    id: 6,
+    name: 'Blood Purifier',
+    img: 'https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&w=300&q=80',
+    link: '/shop?problem=Blood+Purifier',
   },
 ];
 
@@ -35,27 +47,22 @@ const HeroCategories = () => {
         {/* Section Header */}
         <div className="section-header">
           <p className="section-eyebrow">
-            <i className="fa-solid fa-seedling section-eyebrow-icon"></i>Shop the Ritual <span className="eyebrow-dot">·</span> Ancient Wisdom
+            <i className="fa-solid fa-leaf section-eyebrow-icon"></i>Shop by Concern <span className="eyebrow-dot">·</span> Targeted Care
           </p>
-          <h2 className="section-title">Shop by Format</h2>
+          <h2 className="section-title">Shop by Problem</h2>
           <p className="section-desc">
-            Choose the perfect format for your daily wellness ritual.
+            Select a health concern to explore our specialized Ayurvedic juices, capsules, and drops.
           </p>
         </div>
 
         {/* Circular Category Cards */}
-        <div className="hero-cat-track">
-          {heroCategories.map((cat) => (
-            <a href={cat.link} key={cat.id} className="hero-cat-item">
-              <div className="hero-cat-circle">
-                <img src={cat.img} alt={cat.name} className="hero-cat-img" />
-                <div className="hero-cat-overlay" />
-                <div className="hero-cat-icon-wrap">
-                  <i className={`fa-solid ${cat.icon} hero-cat-icon`}></i>
-                </div>
+        <div className="hero-cat-track animate-fade-in" style={{ gap: '24px 40px' }}>
+          {heroProblems.map((prob) => (
+            <a href={prob.link} key={prob.id} className="hero-cat-item">
+              <div className="hero-cat-circle" style={{ width: '160px', height: '160px' }}>
+                <img src={prob.img} alt={prob.name} className="hero-cat-img" />
               </div>
-              <p className="hero-cat-name">{cat.name}</p>
-              <p className="hero-cat-sub">{cat.subtitle}</p>
+              <p className="hero-cat-name text-center" style={{ fontSize: '13.5px', fontFamily: '"Poppins", sans-serif', fontWeight: '500', color: '#1f362e' }}>{prob.name}</p>
             </a>
           ))}
         </div>

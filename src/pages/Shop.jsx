@@ -1,38 +1,64 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import ProductCard from '../components/shop/ProductCard';
 
 const ITEMS_PER_PAGE = 6;
 
-const CATEGORIES = ['All', 'Stress Relief', 'Skin Care', 'Cognitive', 'Body Care', 'Hair Care'];
+const CATEGORIES = ['All', 'Juice', 'Capsule', 'Drop'];
 
 const CATEGORY_ICONS = {
-  'All':           'fa-solid fa-spa',
-  'Stress Relief': 'fa-solid fa-leaf',
-  'Skin Care':     'fa-solid fa-seedling',
-  'Cognitive':     'fa-solid fa-brain',
-  'Body Care':     'fa-solid fa-droplet',
-  'Hair Care':     'fa-solid fa-wind',
+  'All':     'fa-solid fa-spa',
+  'Juice':   'fa-solid fa-droplet',
+  'Capsule': 'fa-solid fa-capsules',
+  'Drop':    'fa-solid fa-flask-vial',
 };
 
 const ShopPage = () => {
   const allProducts = useSelector((state) => state.products.items);
+  const location = useLocation();
   const [activeCategory, setActiveCategory] = useState('All');
+  const [activeProblem, setActiveProblem] = useState('All');
   const [currentPage,    setCurrentPage]    = useState(1);
 
+  // Sync category and problem from URL parameters
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const cat = params.get('category');
+    const prob = params.get('problem');
+
+    if (cat && CATEGORIES.includes(cat)) {
+      setActiveCategory(cat);
+    } else {
+      setActiveCategory('All');
+    }
+
+    if (prob) {
+      setActiveProblem(prob);
+    } else {
+      setActiveProblem('All');
+    }
+    setCurrentPage(1);
+  }, [location.search]);
+
   const filtered = useMemo(() => {
-    const list = activeCategory === 'All'
-      ? allProducts
-      : allProducts.filter((p) => p.category === activeCategory);
+    let list = allProducts;
+    if (activeCategory !== 'All') {
+      list = list.filter((p) => p.category === activeCategory);
+    }
+    if (activeProblem !== 'All') {
+      list = list.filter((p) => p.problem === activeProblem);
+    }
     return list;
-  }, [allProducts, activeCategory]);
+  }, [allProducts, activeCategory, activeProblem]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE));
   const paginated  = filtered.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
 
   const handleCategory = (cat) => {
     setActiveCategory(cat);
+    // When manually selecting format, clear problem filter to avoid empty intersections
+    setActiveProblem('All');
     setCurrentPage(1);
   };
 
@@ -95,11 +121,22 @@ const ShopPage = () => {
         <div className="section-container">
 
           {/* Results bar */}
-          <div className="shop-results-bar">
+          <div className="shop-results-bar flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <p className="shop-results-count">
               Showing <strong>{paginated.length}</strong> of <strong>{filtered.length}</strong> products
               {activeCategory !== 'All' && <> in <em>{activeCategory}</em></>}
+              {activeProblem !== 'All' && <> for <em>{activeProblem}</em></>}
             </p>
+            {activeProblem !== 'All' && (
+              <button 
+                onClick={() => {
+                  setActiveProblem('All');
+                }}
+                className="text-xs text-[#114232] hover:text-[#2d6b56] font-semibold flex items-center gap-1 cursor-pointer w-fit self-start sm:self-auto bg-white border border-gray-100 px-3 py-1.5 rounded-lg shadow-2xs hover:shadow-xs transition-all"
+              >
+                Clear Concern Filter <i className="fa-solid fa-xmark" />
+              </button>
+            )}
             <div className="shop-results-divider" />
           </div>
 

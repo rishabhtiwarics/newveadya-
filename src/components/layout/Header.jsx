@@ -14,9 +14,18 @@ const Header = () => {
   const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
 
   const categories = [
-    { name: "Stress Relief", icon: "fa-leaf" },
-    { name: "Skin Care", icon: "fa-spa" },
-    { name: "Cognitive", icon: "fa-brain" }
+    { 
+      name: "Juice", 
+      img: "https://images.unsplash.com/photo-1610970881699-44a5587caa90?auto=format&fit=crop&w=300&q=80" 
+    },
+    { 
+      name: "Capsule", 
+      img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=300&q=80" 
+    },
+    { 
+      name: "Drop", 
+      img: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=300&q=80" 
+    }
   ];
 
   return (
@@ -72,29 +81,32 @@ const Header = () => {
                 </Link>
                 
                 {isShopHovered && (
-                  <div className="absolute top-full -left-4 pt-4 z-[300] animate-in fade-in slide-in-from-top-2 duration-300">
-                    <div className="bg-white shadow-2xl border border-gray-100 rounded-2xl p-6 min-w-[240px]">
+                  <div className="absolute top-full -left-28 pt-4 z-[300] animate-in fade-in slide-in-from-top-2 duration-300">
+                    <div className="bg-white shadow-2xl border border-gray-100 rounded-2xl p-6 w-[420px]">
                       <div className="space-y-6">
                         {/* Header label */}
                         <div className="text-center">
-                          <p className="text-lg font-serif text-text-dark mb-1">Shop by Category</p>
-                          <p className="text-xs text-gray-400">Explore our curated collections</p>
+                          <p className="text-[16px] font-serif text-text-dark mb-1">Shop by Category</p>
+                          <p className="text-[11px] text-gray-400">Premium Ayurvedic Formats</p>
                         </div>
-                        {/* Category links */}
-                        <ul className="space-y-1">
+                        {/* Category cards grid */}
+                        <div className="grid grid-cols-3 gap-4">
                           {categories.map((cat) => (
-                            <li key={cat.name}>
-                              <Link
-                                to={`/shop?category=${cat.name}`}
-                                className="text-sm text-text-dark hover:text-primary block py-2 flex items-center gap-3 group"
-                                onClick={() => setIsShopHovered(false)}
-                              >
-                                <i className={`fa-solid ${cat.icon} text-primary/40 group-hover:text-primary transition-colors`}></i>
+                            <Link
+                              key={cat.name}
+                              to={`/shop?category=${cat.name}`}
+                              className="group flex flex-col items-center text-center gap-2 p-2 hover:bg-[#e8f0ed] rounded-xl transition-all"
+                              onClick={() => setIsShopHovered(false)}
+                            >
+                              <div className="w-14 h-14 rounded-full overflow-hidden border border-[#e2ebe7] group-hover:border-primary transition-all flex items-center justify-center bg-gray-50">
+                                <img src={cat.img} alt={cat.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                              </div>
+                              <span className="text-[11px] font-semibold tracking-wider text-text-dark group-hover:text-primary transition-colors uppercase">
                                 {cat.name}
-                              </Link>
-                            </li>
+                              </span>
+                            </Link>
                           ))}
-                        </ul>
+                        </div>
                         {/* Footer CTA */}
                         <Link
                           to="/shop"
