@@ -36,9 +36,9 @@ const OfferModal = () => {
   return (
     <div className="fixed inset-0 z-10000 flex items-center justify-center bg-black/60 backdrop-blur-xs p-4 animate-fade-in">
       <div className="relative w-full max-w-[760px] bg-white rounded-[16px] overflow-hidden shadow-2xl flex flex-col md:flex-row animate-scale-up border border-gray-100">
-        
+
         {/* Close Button */}
-        <button 
+        <button
           onClick={handleClose}
           className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/80 border border-gray-100 flex items-center justify-center text-gray-500 hover:text-primary hover:bg-white shadow-xs transition-all z-10 cursor-pointer"
         >
@@ -47,13 +47,13 @@ const OfferModal = () => {
 
         {/* Left column: Banner Image */}
         <div className="w-full md:w-[48%] relative min-h-[220px] md:min-h-[420px] flex flex-col justify-between p-6 bg-cover bg-center"
-             style={{ backgroundImage: "linear-gradient(rgba(17, 66, 50, 0.45) 0%, rgba(11, 26, 20, 0.85) 100%), url('https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80')" }}>
+          style={{ backgroundImage: "linear-gradient(rgba(17, 66, 50, 0.45) 0%, rgba(11, 26, 20, 0.85) 100%), url('/modelimg/modelimg.png')" }}>
           <div className="flex items-center gap-2">
             <span className="text-[10px] tracking-[0.2em] font-semibold text-white/90 bg-white/15 px-3 py-1 rounded-full backdrop-blur-xs uppercase">
               Limited Offer
             </span>
           </div>
-          
+
           <div className="space-y-3">
             <p className="text-[12px] tracking-[0.25em] font-bold text-white/85 uppercase">Unlock</p>
             <h3 className="text-3xl font-serif text-white leading-tight">Exclusive Offer</h3>
@@ -108,7 +108,7 @@ const OfferModal = () => {
               </div>
 
               {/* Submit button */}
-              <button 
+              <button
                 type="submit"
                 disabled={!agree || phone.length < 10}
                 className="w-full bg-primary hover:bg-primary-lt disabled:bg-gray-200 disabled:text-gray-400 text-white text-[12px] font-semibold py-3 px-6 rounded-[8px] uppercase tracking-[0.1em] shadow-sm transition-all duration-300 cursor-pointer disabled:cursor-not-allowed text-center"
