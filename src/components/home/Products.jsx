@@ -5,7 +5,7 @@ import ProductCard from '../shop/ProductCard';
 
 const Products = () => {
   const products = useSelector((state) => state.products.items);
-  const homeProducts = products.slice(0, 5); // Only 5 cards for home
+  const homeProducts = products.slice(0, 5); // Show only 5 products
 
   return (
     <section className="products-section">

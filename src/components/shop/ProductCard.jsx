@@ -34,7 +34,7 @@ const ProductCard = ({ product, isDark = false }) => {
             <p className="text-[#9abcb9] text-[9px] uppercase tracking-[0.2em] font-semibold mb-2">
               {product.tag || product.type}
             </p>
-            <h3 className="font-serif text-[20px] text-white mb-6 transition-colors group-hover:text-[#f3eed5]">
+            <h3 className="font-serif text-[20px] text-white mb-6 transition-colors group-hover:text-[#f3eed5] truncate">
               <Link to={`/product/${product.id}`} style={{ color: 'inherit', textDecoration: 'none' }}>
                 {product.name}
               </Link>

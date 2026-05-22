@@ -44,13 +44,13 @@ const initialState = {
     },
     {
       id: 5,
-      tag: "Drop",
-      name: "Kumkumadi Glow Drops",
-      price: 740,
+      tag: "Juice",
+      name: "Amla Detox Juice",
+      price: 410,
       image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=500&q=80",
-      category: "Drop",
+      category: "Juice",
       problem: "Skin Wellness",
-      shortDescription: "Illuminates complexion and clears blemishes with saffron extracts."
+      shortDescription: "Illuminates complexion and clears blemishes with natural extracts."
     },
     {
       id: 6,
@@ -61,6 +61,16 @@ const initialState = {
       category: "Capsule",
       problem: "Blood Purifier",
       shortDescription: "Flushes out toxins, purifies blood, and promotes clean skin."
+    },
+    {
+      id: 7,
+      tag: "Juice",
+      name: "Aloe Vera Digestion Juice",
+      price: 390,
+      image: "https://images.unsplash.com/photo-1610970881699-44a5587caa90?auto=format&fit=crop&w=500&q=80",
+      category: "Juice",
+      problem: "Digestive Wellness",
+      shortDescription: "Soothes the digestive tract and enhances nutrient absorption."
     }
   ],
   loading: false,

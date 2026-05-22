@@ -6,17 +6,12 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import ProductCard from '../shop/ProductCard';
 
-const veadyaProducts = [
-  { id: 101, type: "OILS", name: "Brahmi Scalp Oil", price: "56.00", image: "/images/product/1.jfif" },
-  { id: 102, type: "CAPSULES", name: "Shatavari Balance", price: "68.00", image: "/images/product/2.jfif" },
-  { id: 103, type: "TEAS", name: "Tulsi Calm Blend", price: "32.00", image: "/images/product/3.jfif" },
-  { id: 104, type: "SERUMS", name: "Kumkumadi Glow", price: "74.00", image: "/images/product/4.jfif" },
-  { id: 105, type: "HERBS", name: "Triphala Cleanse", price: "42.00", image: "/images/product/6.jfif" },
-];
+import { useSelector } from 'react-redux';
 
 const FullVeadyaEdit = () => {
+  const products = useSelector((state) => state.products.items);
   // Create an array with enough slides to loop smoothly
-  const displayProducts = [...veadyaProducts, ...veadyaProducts, ...veadyaProducts];
+  const displayProducts = [...products, ...products, ...products];
 
   return (
     <section className="py-24 text-white full-veadya-section">
