@@ -9,8 +9,8 @@ const Footer = () => {
           <div className="footer-grid">
             {/* Col 1: About */}
             <div>
-              <Link to="/" className="footer-logo" style={{ display: 'block', textDecoration: 'none' }}>
-                <img src="/logo/bgremovepng.png" alt="Veadya" style={{ height: '64px', width: 'auto', display: 'block', marginBottom: '10px' }} />
+              <Link to="/" className="footer-logo footer-logo-link">
+                <img src="/logo/bgremovepng.png" alt="Veadya" className="footer-logo-img" />
                 <small>Ancient Wisdom · Modern Form</small>
               </Link>
               <p className="footer-about-text">

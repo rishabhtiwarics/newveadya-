@@ -180,13 +180,13 @@ const WatchShop = () => {
           {/* Custom Navigation Slider Arrows (Figma style overlay) */}
           <button 
             onClick={() => swiperRef.current?.slidePrev()}
-            className="absolute left-[-16px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-[#e2ebe7] text-[#114232] shadow-md flex items-center justify-center transition-all hover:bg-[#114232] hover:text-white hover:border-[#114232] z-20 cursor-pointer"
+            className="absolute left-[-16px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-[#e2ebe7] text-[#114232] shadow-md hidden md:flex items-center justify-center transition-all hover:bg-[#114232] hover:text-white hover:border-[#114232] z-20 cursor-pointer"
           >
             <i className="fa-solid fa-chevron-left text-[13px]" />
           </button>
           <button 
             onClick={() => swiperRef.current?.slideNext()}
-            className="absolute right-[-16px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-[#e2ebe7] text-[#114232] shadow-md flex items-center justify-center transition-all hover:bg-[#114232] hover:text-white hover:border-[#114232] z-20 cursor-pointer"
+            className="absolute right-[-16px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-[#e2ebe7] text-[#114232] shadow-md hidden md:flex items-center justify-center transition-all hover:bg-[#114232] hover:text-white hover:border-[#114232] z-20 cursor-pointer"
           >
             <i className="fa-solid fa-chevron-right text-[13px]" />
           </button>

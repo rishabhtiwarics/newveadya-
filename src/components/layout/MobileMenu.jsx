@@ -5,12 +5,9 @@ import { logout } from '../../store/slices/authSlice';
 import { Link, useLocation } from 'react-router-dom';
 
 const shopCategories = [
-  { label: 'All Products',   path: '/shop',                     icon: 'fa-solid fa-spa' },
-  { label: 'Stress Relief',  path: '/shop?cat=Stress+Relief',   icon: 'fa-solid fa-leaf' },
-  { label: 'Skin Care',      path: '/shop?cat=Skin+Care',       icon: 'fa-solid fa-seedling' },
-  { label: 'Cognitive',      path: '/shop?cat=Cognitive',       icon: 'fa-solid fa-brain' },
-  { label: 'Body Care',      path: '/shop?cat=Body+Care',       icon: 'fa-solid fa-droplet' },
-  { label: 'Hair Care',      path: '/shop?cat=Hair+Care',       icon: 'fa-solid fa-wind' },
+  { label: 'Juice',   path: '/shop?category=Juice',   icon: 'fa-solid fa-droplet' },
+  { label: 'Capsule', path: '/shop?category=Capsule', icon: 'fa-solid fa-capsules' },
+  { label: 'Drop',    path: '/shop?category=Drop',    icon: 'fa-solid fa-flask-vial' },
 ];
 
 const navLinks = [
@@ -118,10 +115,9 @@ const MobileMenu = () => {
                 </span>
               </button>
 
-              {/* Sub-categories — animated slide-down */}
               <div
                 style={{
-                  maxHeight: shopOpen ? '400px' : '0px',
+                  maxHeight: shopOpen ? '200px' : '0px',
                   overflow: 'hidden',
                   transition: 'max-height 0.35s cubic-bezier(0.4,0,0.2,1)',
                   borderBottom: shopOpen ? '1px solid rgba(46,110,126,0.07)' : 'none',
