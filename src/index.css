@@ -4472,6 +4472,47 @@ h6 {
     max-width: 100%;
   }
 
+  .cart-layout {
+    gap: 20px;
+  }
+
+  .cart-summary-col {
+    width: 100%;
+  }
+
+  .cart-summary-card {
+    max-width: none;
+  }
+
+  .cart-summary-inner {
+    padding: 24px 20px;
+  }
+
+  .cart-payment-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .checkout-summary-item {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .checkout-summary-name {
+    white-space: normal;
+  }
+
+  .co-steps {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .co-step-line {
+    display: none;
+  }
+
   .cart-summary-total-val {
     font-size: 26px;
   }
@@ -4488,6 +4529,54 @@ h6 {
 
   .checkout-form-card {
     padding: 20px 16px;
+  }
+
+  .cart-summary-card {
+    margin-top: 0;
+  }
+
+  .cart-summary-inner {
+    padding: 20px 18px;
+  }
+
+  .cart-blob,
+  .checkout-summary-item {
+    max-width: 100%;
+  }
+
+  .cart-blob {
+    display: none;
+  }
+
+  .checkout-summary-item {
+    align-items: flex-start;
+  }
+
+  .cart-item-row {
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .cart-item-top,
+  .cart-item-bottom {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .cart-item-name {
+    white-space: normal;
+  }
+
+  .co-form-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .co-back-btn,
+  .co-next-btn,
+  .co-place-btn {
+    width: 100%;
   }
 }
 
@@ -5122,6 +5211,73 @@ h6 {
   .about-values-grid {
     grid-template-columns: 1fr !important;
     gap: 40px !important;
+  }
+
+  .product-details-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .product-details-primary-image {
+    padding: 28px !important;
+    height: auto !important;
+    min-height: 320px;
+  }
+
+  .product-details-thumbs {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+
+  .product-details-thumbs button {
+    height: 72px !important;
+  }
+
+  .product-details-size-options {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .product-details-action-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .product-details-action-row .btn-primary {
+    width: 100%;
+  }
+
+  .product-details-action-row > div {
+    width: 100%;
+  }
+
+  .product-details-tab-list {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  .product-details-tab-list button {
+    flex: 1 1 140px;
+    text-align: center;
+    padding-bottom: 14px;
+  }
+
+  .product-details-profile {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .product-details-alchemy,
+  .product-details-ritual {
+    max-width: 100% !important;
+  }
+
+  .product-details-ritual {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
   }
 }
 

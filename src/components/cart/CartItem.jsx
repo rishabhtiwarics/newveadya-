@@ -43,13 +43,13 @@ const CartItem = ({ item, isDrawer = false }) => {
       </div>
 
       {/* Info */}
-      <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '6px' }}>
+      <div className="cart-item-content" style={{ flex: 1, minWidth: 0 }}>
+        <div className="cart-item-top" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '6px' }}>
           <div style={{ minWidth: 0 }}>
             <span style={{ fontFamily: '"Jost", sans-serif', fontSize: '9px', fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--primary)', display: 'block', marginBottom: '3px' }}>
               {item.tag}
             </span>
-            <h4 style={{ fontFamily: '"Cormorant Garamond", serif', fontSize: isDrawer ? '15px' : '18px', fontWeight: 400, color: 'var(--text-dark)', letterSpacing: '0.01em', lineHeight: 1.2, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+            <h4 className="cart-item-name" style={{ fontFamily: '"Cormorant Garamond", serif', fontSize: isDrawer ? '15px' : '18px', fontWeight: 400, color: 'var(--text-dark)', letterSpacing: '0.01em', lineHeight: 1.2, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               {item.name}
             </h4>
           </div>
@@ -66,9 +66,9 @@ const CartItem = ({ item, isDrawer = false }) => {
         </div>
 
         {/* Qty + Price */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '10px' }}>
+        <div className="cart-item-bottom" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '10px' }}>
           {/* Qty stepper */}
-          <div style={{ display: 'flex', alignItems: 'center', borderRadius: '20px', border: '1.5px solid rgba(1,114,110,0.15)', overflow: 'hidden', background: '#fff' }}>
+          <div className="cart-item-qty" style={{ display: 'flex', alignItems: 'center', borderRadius: '20px', border: '1.5px solid rgba(1,114,110,0.15)', overflow: 'hidden', background: '#fff' }}>
             <button
               onClick={() => handleQty(item.quantity - 1)}
               style={{ width: '30px', height: '30px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)', background: 'none', border: 'none', cursor: 'pointer', fontSize: '11px' }}

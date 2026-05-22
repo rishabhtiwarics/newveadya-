@@ -227,10 +227,10 @@ const ProductDetails = () => {
             gridTemplateColumns: '1fr 1.1fr',
             gap: '64px',
             alignItems: 'start'
-          }} className="about-values-grid">
+          }} className="about-values-grid product-details-grid">
             
             {/* ── LEFT COLUMN: Gallery & Stamp ── */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }} className="product-details-gallery-column">
               
               {/* Main Image Outer with Luxury Studio Aura Glow */}
               <div style={{
@@ -246,7 +246,7 @@ const ProductDetails = () => {
                 overflow: 'hidden',
                 height: '520px',
                 transition: 'all 0.4s ease'
-              }}>
+              }} className="product-details-primary-image">
                 <img 
                   src={activeImage} 
                   alt={product.name}
@@ -286,7 +286,7 @@ const ProductDetails = () => {
               </div>
 
               {/* Gallery Thumbnails Row: Multiple Product Images */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px' }} className="product-details-thumbs">
                 {galleryImages.map((imgUrl, index) => (
                   <button 
                     key={index}
@@ -327,7 +327,7 @@ const ProductDetails = () => {
             </div>
 
             {/* ── RIGHT COLUMN: Content Profile ── */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }} className="product-details-summary">
               
               {/* Core Information Header */}
               <div>
@@ -402,7 +402,7 @@ const ProductDetails = () => {
                 display: 'grid',
                 gridTemplateColumns: '1fr 1fr',
                 gap: '24px 32px'
-              }}>
+              }} className="product-details-properties">
                 <div>
                   <span style={{ display: 'block', fontFamily: '"Jost", sans-serif', fontSize: '9px', fontWeight: 600, color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '4px' }}>Dosha Suitability</span>
                   <span style={{ fontFamily: '"Jost", sans-serif', fontSize: '13.5px', color: 'var(--text-dark)', fontWeight: 400 }}>{profile.dosha}</span>
@@ -437,7 +437,7 @@ const ProductDetails = () => {
                 }}>
                   Select Botanical Volume
                 </span>
-                <div style={{ display: 'flex', gap: '16px' }}>
+                <div style={{ display: 'flex', gap: '16px' }} className="product-details-size-options">
                   {['50ml', '100ml'].map((size) => (
                     <button
                       key={size}
@@ -463,7 +463,7 @@ const ProductDetails = () => {
               </div>
 
               {/* Quantity Selector & Add to Bag CTA */}
-              <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginTop: '8px' }}>
+              <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginTop: '8px' }} className="product-details-action-row">
                 
                 {/* Quantity Box */}
                 <div style={{
@@ -533,7 +533,7 @@ const ProductDetails = () => {
             borderRadius: '24px',
             padding: '48px',
             boxShadow: '0 16px 48px rgba(1, 114, 110, 0.02)'
-          }}>
+          }} className="product-details-tabs">
             
             {/* Tab Headers */}
             <div style={{
@@ -541,7 +541,7 @@ const ProductDetails = () => {
               borderBottom: '1px solid rgba(1, 114, 110, 0.08)',
               gap: '40px',
               marginBottom: '36px'
-            }}>
+            }} className="product-details-tab-list">
               {[
                 { id: 'profile', label: 'The Botanical Profile' },
                 { id: 'alchemy', label: 'Sacred Alchemy' },
@@ -570,9 +570,9 @@ const ProductDetails = () => {
             </div>
 
             {/* Tab Body */}
-            <div>
+            <div className="product-details-tab-body">
               {activeTab === 'profile' && (
-                <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '48px' }} className="about-values-grid">
+                <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '48px' }} className="about-values-grid product-details-profile">
                   <div>
                     <h4 style={{ fontFamily: '"Cormorant Garamond", serif', fontSize: '24px', fontWeight: 500, color: 'var(--text-dark)', marginBottom: '16px' }}>Bespoke Wellness Intentions</h4>
                     <p style={{ fontFamily: '"Jost", sans-serif', fontSize: '14.5px', color: 'var(--text-mid)', lineHeight: '1.75', fontWeight: 300, marginBottom: '24px' }}>
@@ -615,7 +615,7 @@ const ProductDetails = () => {
               )}
 
               {activeTab === 'alchemy' && (
-                <div style={{ maxWidth: '680px' }}>
+                <div style={{ maxWidth: '680px' }} className="product-details-alchemy">
                   <h4 style={{ fontFamily: '"Cormorant Garamond", serif', fontSize: '24px', fontWeight: 500, color: 'var(--text-dark)', marginBottom: '16px' }}>Active Alchemical Disclosures</h4>
                   <p style={{ fontFamily: '"Jost", sans-serif', fontSize: '14.5px', color: 'var(--text-mid)', lineHeight: '1.8', fontWeight: 300, marginBottom: '20px' }}>
                     {profile.alchemy}
@@ -627,7 +627,7 @@ const ProductDetails = () => {
               )}
 
               {activeTab === 'ritual' && (
-                <div style={{ maxWidth: '680px', display: 'flex', gap: '28px' }}>
+                <div style={{ maxWidth: '680px', display: 'flex', gap: '28px' }} className="product-details-ritual">
                   <div style={{
                     width: '44px',
                     height: '44px',
