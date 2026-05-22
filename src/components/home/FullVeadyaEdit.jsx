@@ -4,13 +4,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay';
+import ProductCard from '../shop/ProductCard';
 
 const veadyaProducts = [
-  { id: 1, type: "OILS", name: "Brahmi Scalp Oil", price: "56.00", image: "/images/product/1.jfif" },
-  { id: 2, type: "CAPSULES", name: "Shatavari Balance", price: "68.00", image: "/images/product/2.jfif" },
-  { id: 3, type: "TEAS", name: "Tulsi Calm Blend", price: "32.00", image: "/images/product/3.jfif" },
-  { id: 4, type: "SERUMS", name: "Kumkumadi Glow", price: "74.00", image: "/images/product/4.jfif" },
-  { id: 5, type: "HERBS", name: "Triphala Cleanse", price: "42.00", image: "/images/product/6.jfif" },
+  { id: 101, type: "OILS", name: "Brahmi Scalp Oil", price: "56.00", image: "/images/product/1.jfif" },
+  { id: 102, type: "CAPSULES", name: "Shatavari Balance", price: "68.00", image: "/images/product/2.jfif" },
+  { id: 103, type: "TEAS", name: "Tulsi Calm Blend", price: "32.00", image: "/images/product/3.jfif" },
+  { id: 104, type: "SERUMS", name: "Kumkumadi Glow", price: "74.00", image: "/images/product/4.jfif" },
+  { id: 105, type: "HERBS", name: "Triphala Cleanse", price: "42.00", image: "/images/product/6.jfif" },
 ];
 
 const FullVeadyaEdit = () => {
@@ -63,38 +64,7 @@ const FullVeadyaEdit = () => {
           >
             {displayProducts.map((product, index) => (
               <SwiperSlide key={`product-${index}`} className="border-r border-white/10 h-auto flex">
-                <div className="group cursor-pointer flex flex-col w-full h-full bg-white/[0.02] hover:bg-white/[0.06] transition-all duration-500 backdrop-blur-[1px]">
-                  {/* Image Container */}
-                  <div className="aspect-square overflow-hidden relative">
-                    <img 
-                      src={product.image} 
-                      alt={product.name} 
-                      className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-[1.05]" 
-                    />
-                  </div>
-
-                  {/* Content Container */}
-                  <div className="p-6 flex flex-col justify-between flex-grow">
-                    <div>
-                      <div className="w-6 h-[1px] bg-[#9abcb9] mb-4"></div>
-                      <p className="text-[#9abcb9] text-[9px] uppercase tracking-[0.2em] font-semibold mb-2">
-                        {product.type}
-                      </p>
-                      <h3 className="font-serif text-[20px] text-white mb-6 transition-colors group-hover:text-[#f3eed5]">
-                        {product.name}
-                      </h3>
-                    </div>
-
-                    <div className="flex items-center justify-between">
-                      <p className="text-[#f3eed5] font-semibold text-[13px] tracking-wide">
-                        ₹ {product.price}
-                      </p>
-                      <button className="bg-white/5 backdrop-blur-sm border border-white/20 text-white px-4 py-2 text-[9px] uppercase tracking-[0.15em] hover:bg-white hover:text-[var(--bg-deep)] transition-all font-medium rounded-sm cursor-pointer">
-                        + CART
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                <ProductCard product={product} isDark={true} />
               </SwiperSlide>
             ))}
           </Swiper>

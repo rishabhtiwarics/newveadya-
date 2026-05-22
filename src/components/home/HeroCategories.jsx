@@ -1,4 +1,7 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 
 const heroProblems = [
   {
@@ -55,16 +58,49 @@ const HeroCategories = () => {
           </p>
         </div>
 
-        {/* Circular Category Cards */}
-        <div className="hero-cat-track animate-fade-in" style={{ gap: '24px 40px' }}>
-          {heroProblems.map((prob) => (
-            <a href={prob.link} key={prob.id} className="hero-cat-item">
-              <div className="hero-cat-circle" style={{ width: '160px', height: '160px' }}>
-                <img src={prob.img} alt={prob.name} className="hero-cat-img" />
-              </div>
-              <p className="hero-cat-name text-center" style={{ fontSize: '13.5px', fontFamily: '"Poppins", sans-serif', fontWeight: '500', color: '#1f362e' }}>{prob.name}</p>
-            </a>
-          ))}
+        {/* Circular Category Cards Swiper Carousel */}
+        <div className="hero-cat-swiper-wrap animate-fade-in">
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={20}
+            slidesPerView={2}
+            loop={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true
+            }}
+            breakpoints={{
+              480: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+              },
+              1200: {
+                slidesPerView: 6,
+                spaceBetween: 40,
+              },
+            }}
+            className="swiper-categories"
+          >
+            {heroProblems.map((prob) => (
+              <SwiperSlide key={prob.id}>
+                <a href={prob.link} className="hero-cat-item">
+                  <div className="hero-cat-circle">
+                    <img src={prob.img} alt={prob.name} className="hero-cat-img" />
+                  </div>
+                  <p className="hero-cat-name text-center" style={{ fontSize: '13.5px', fontFamily: '"Poppins", sans-serif', fontWeight: '500', color: '#1f362e' }}>{prob.name}</p>
+                </a>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
 
       </div>

@@ -10,7 +10,7 @@ const Footer = () => {
             {/* Col 1: About */}
             <div>
               <Link to="/" className="footer-logo" style={{ display: 'block', textDecoration: 'none' }}>
-                <img src="/logo/bgremovepng.png" alt="Veadya" style={{ height: '36px', width: 'auto', display: 'block', marginBottom: '8px' }} />
+                <img src="/logo/bgremovepng.png" alt="Veadya" style={{ height: '64px', width: 'auto', display: 'block', marginBottom: '10px' }} />
                 <small>Ancient Wisdom · Modern Form</small>
               </Link>
               <p className="footer-about-text">

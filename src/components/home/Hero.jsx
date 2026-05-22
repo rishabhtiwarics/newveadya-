@@ -15,7 +15,6 @@ const Hero = () => {
     {
       id: 2,
       img: "/bnnerthree.png"
-
     },
     {
       id: 3,
@@ -42,79 +41,83 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero-section">
-      <div className="hero-container relative">
-        <Swiper
-          modules={[Autoplay, EffectFade]}
-          onSwiper={setSwiperInstance}
-          effect="fade"
-          fadeEffect={{ crossFade: true }}
-          loop={true}
-          speed={900}
-          autoplay={{ delay: 2800, disableOnInteraction: false, pauseOnMouseEnter: false }}
-          className="swiper-hero"
-        >
-          {slidesData.map((slide) => (
-            <SwiperSlide key={slide.id}>
-              {({ isActive }) => (
-                <div className={`hero-slide-content ${isActive ? 'txt-entering' : ''}`}>
-                  {/* Full Bleed Image Background */}
-                  <div className="hero-slide-bg">
-                    <img src={slide.img} alt="Veadya Slideshow" className="hero-bg-img" />
-                  </div>
-
-                  {/* Centered Floating Glass Trust Bar (Figma Style) */}
-                  <div className="hero-glass-container">
-                    <div className="hero-glass justify-center">
-                      <div className="trust-bar">
-                        <div className="trust-item trust-item-border-r">
-                          <div className="trust-icon-wrap"><i className="fa-solid fa-seedling trust-icon"></i></div>
-                          <div>
-                            <p className="trust-title">100% Natural</p>
-                            <p className="trust-desc">Sourced directly from earth's bounty.</p>
-                          </div>
-                        </div>
-                        <div className="trust-item trust-item-border-r">
-                          <div className="trust-icon-wrap"><i className="fa-solid fa-shield-halved trust-icon"></i></div>
-                          <div>
-                            <p className="trust-title">GMP Certified</p>
-                            <p className="trust-desc">Highest global safety standards.</p>
-                          </div>
-                        </div>
-                        <div className="trust-item trust-item-border-r">
-                          <div className="trust-icon-wrap"><i className="fa-solid fa-flask-vial trust-icon"></i></div>
-                          <div>
-                            <p className="trust-title">No Chemicals</p>
-                            <p className="trust-desc">Pure botanicals, nothing artificial.</p>
-                          </div>
-                        </div>
-                        <div className="trust-item">
-                          <div className="trust-icon-wrap"><i className="fa-solid fa-users trust-icon"></i></div>
-                          <div>
-                            <p className="trust-title">Thousands Trust</p>
-                            <p className="trust-desc">Join our community of wellness.</p>
-                          </div>
-                        </div>
-                      </div>
+    <>
+      <section className="hero-section">
+        <div className="hero-container relative">
+          <Swiper
+            modules={[Autoplay, EffectFade]}
+            onSwiper={setSwiperInstance}
+            effect="fade"
+            fadeEffect={{ crossFade: true }}
+            loop={true}
+            speed={900}
+            autoplay={{ delay: 2800, disableOnInteraction: false, pauseOnMouseEnter: false }}
+            className="swiper-hero"
+          >
+            {slidesData.map((slide) => (
+              <SwiperSlide key={slide.id}>
+                {({ isActive }) => (
+                  <div className={`hero-slide-content ${isActive ? 'txt-entering' : ''}`}>
+                    {/* Full Bleed Image Background */}
+                    <div className="hero-slide-bg">
+                      <img src={slide.img} alt="Veadya Slideshow" className="hero-bg-img" />
                     </div>
                   </div>
-                </div>
-              )}
-            </SwiperSlide>
-          ))}
-        </Swiper>
+                )}
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
-        {/* Custom Navigation Buttons (positioned in place of pagination bullets) */}
-        <div className="hero-nav-wrapper">
-          <button className="hero-prev-btn" onClick={handlePrev} aria-label="Previous slide">
-            <i className="fa-solid fa-chevron-left" />
-          </button>
-          <button className="hero-next-btn" onClick={handleNext} aria-label="Next slide">
-            <i className="fa-solid fa-chevron-right" />
-          </button>
+          {/* Custom Navigation Buttons */}
+          <div className="section-container">
+            <div className="hero-nav-wrapper">
+              <button className="hero-prev-btn" onClick={handlePrev} aria-label="Previous slide">
+                <i className="fa-solid fa-chevron-left" />
+              </button>
+              <button className="hero-next-btn" onClick={handleNext} aria-label="Next slide">
+                <i className="fa-solid fa-chevron-right" />
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Trust Section — visible on all views */}
+      <section className="trust-section">
+        <div className="section-container">
+          <div className="trust-bar">
+            <div className="trust-item trust-item-border-r">
+              <div className="trust-icon-wrap"><i className="fa-solid fa-seedling trust-icon"></i></div>
+              <div>
+                <p className="trust-title">100% Natural</p>
+                <p className="trust-desc">Sourced directly from earth's bounty.</p>
+              </div>
+            </div>
+            <div className="trust-item trust-item-border-r">
+              <div className="trust-icon-wrap"><i className="fa-solid fa-shield-halved trust-icon"></i></div>
+              <div>
+                <p className="trust-title">GMP Certified</p>
+                <p className="trust-desc">Highest global safety standards.</p>
+              </div>
+            </div>
+            <div className="trust-item trust-item-border-r">
+              <div className="trust-icon-wrap"><i className="fa-solid fa-flask-vial trust-icon"></i></div>
+              <div>
+                <p className="trust-title">No Chemicals</p>
+                <p className="trust-desc">Pure botanicals, nothing artificial.</p>
+              </div>
+            </div>
+            <div className="trust-item">
+              <div className="trust-icon-wrap"><i className="fa-solid fa-users trust-icon"></i></div>
+              <div>
+                <p className="trust-title">Thousands Trust</p>
+                <p className="trust-desc">Join our community of wellness.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
